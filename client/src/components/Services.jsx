@@ -62,7 +62,7 @@ const Services = () => {
           return (
             <div
               key={i}
-              className="group relative p-8 bg-white rounded-2xl border
+              className="group relative p-8 bg-white rounded-2xl 
               shadow-md hover:shadow-2xl transform hover:-translate-y-3
               transition duration-500 cursor-pointer overflow-hidden"
             >
