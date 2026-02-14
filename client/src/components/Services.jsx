@@ -43,7 +43,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-20 xl:px-32 my-24">
+    <div className="px-4 sm:px-20 xl:px-32 my-22">
       
       {/* Header */}
       <div className="text-center">
