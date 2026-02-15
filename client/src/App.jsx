@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 import Home from './pages/Home'
 import About from './pages/About'
-import PrivacyPolicy from './pages/policy'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermConditions'
 import Contact from './pages/Contact'
 import BecomePartner from './pages/BecomePartner'
