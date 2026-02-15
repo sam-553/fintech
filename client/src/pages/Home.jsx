@@ -10,11 +10,11 @@ import Testimonials from '../components/Testimonials'
 const Home = () => {
     return (
         <div>
-            <Navbar />
+          
             <Hero />
             <Services />
             <Testimonials />
-            <Footer />
+           
         </div>
     )
 }
