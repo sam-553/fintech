@@ -12,6 +12,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermConditions'
 import Contact from './pages/Contact'
 import BecomePartner from './pages/BecomePartner'
+import SideButton from './components/SideButton'
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
 
    
       <Navbar />
-
+         <SideButton/>
      
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,11 +30,13 @@ const App = () => {
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/becomepartner" element={<BecomePartner />} />
+        
+
       </Routes>
 
       <Footer />
     </>
   )
 }
-
+<Route path="/becomepartner" element={<BecomePartner />} />
 export default App

@@ -8,11 +8,13 @@ import EmiCalculator from '../components/Emicalc'
 
 
 
+
 const Home = () => {
     return (
         <div>
           
             <Hero />
+           
             <Services />
             <EmiCalculator/>
             <Testimonials />

@@ -115,13 +115,13 @@ text-sm font-semibold mt-4
 transition-all duration-300 
 hover:gap-6 group">
 
-  Apply Now
+                    Apply Now
 
-  <ArrowRight 
-    size={16} 
-    className="transition-transform duration-300 group-hover:translate-x-1"
-  />
-</button>
+                    <ArrowRight
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </button>
 
                 </div>
               </div>
@@ -158,22 +158,22 @@ hover:gap-6 group">
           </div>
 
           {/* WhatsApp CTA */}
-         <div className="text-center mt-12">
-  <h2 className="text-2xl font-semibold mb-2">
-    Need Help Choosing?
-  </h2>
+          <div className="text-center mt-12">
+            <h2 className="text-2xl font-semibold mb-2">
+              Need Help Choosing?
+            </h2>
 
-  <p className="text-gray-600 mb-6">
-    Our financial experts are available to guide you
-  </p>
+            <p className="text-gray-600 mb-6">
+              Our financial experts are available to guide you
+            </p>
 
-  <button className="flex items-center gap-3 mx-auto px-7 py-3 
+            <button className="flex items-center gap-3 mx-auto px-7 py-3 
   bg-green-500 text-white rounded-full shadow-lg 
   hover:bg-green-600 hover:scale-105 transition duration-300">
-    <MessageCircle size={20} />
-    Chat on WhatsApp
-  </button>
-</div>
+              <MessageCircle size={20} />
+              Chat on WhatsApp
+            </button>
+          </div>
 
         </div>
       </section>
