@@ -150,7 +150,7 @@ const testimonials = [
   
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-50 via-white to-blue-100">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-50 via-white to-blue-100 mt-8">
 
       {/* Background blur effect */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40"></div>

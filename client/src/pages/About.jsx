@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-r from-gray-50 via-white to-gray-100 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-r from-gray-50 via-white to-gray-100 overflow-hidden mt-8">
 
       {/* Decorative Blur */}
       <div className="absolute -top-16 -left-16 w-72 h-72 bg-gray-200 rounded-full blur-3xl opacity-40"></div>

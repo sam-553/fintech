@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-50 via-white to-gray-100 py-20">
+    <section className="bg-gradient-to-r from-gray-50 via-white to-gray-100 py-20 mt-8">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}

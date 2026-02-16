@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100 overflow-hidden mt-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
             Apply for Loans
