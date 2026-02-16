@@ -5,27 +5,32 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50 mx-auto ">
-      <div className="flex justify-between items-center px-6 py-4">
+    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50 transition-all duration-300">
+      <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-gray-800">
-          FinanceCorp
-        </h1>
+        <a href="/" className="text-2xl font-bold text-gray-800 flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <img src="/assets/weblogo.webp" alt="Logo" className="h-14 w-auto" />
+        
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 font-medium text-gray-600">
-          <a href="/" className="hover:text-gray-900">Home</a>
-          <a href="/about" className="hover:text-gray-900">About Us</a>
-          <a href="/privacy-policy" className="hover:text-gray-900">Privacy Policy</a>
-          <a href="/terms" className="hover:text-gray-900">Terms</a>
-          <a href="/contact" className="hover:text-gray-900">Contact</a>
-          <a href="/becomepartner" className="hover:text-gray-900">Become Partner</a>
+          {["Home", "About Us", "Privacy Policy", "Terms", "Contact", "Become Partner"].map((item, idx) => (
+            <a
+              key={idx}
+              href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              className="relative group hover:text-blue-600 transition-colors duration-300"
+            >
+              {item}
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all group-hover:w-full"></span>
+            </a>
+          ))}
         </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
           onClick={() => setOpen(!open)}
         >
           {open ? <X size={28} /> : <Menu size={28} />}
@@ -33,18 +38,37 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white shadow-lg px-6 pb-6">
-          <nav className="flex flex-col gap-4 text-gray-700 font-medium">
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms">Terms</a>
-            <a href="/contact">Contact</a>
-            <a href="/becomepartner">Become Partner</a>
-          </nav>
+      <div
+        className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-md z-40 transform ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300`}
+      >
+        <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
+          <a href="/" className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            <img src="/assets/weblogo.webp" alt="Logo" className="h-10 w-auto" />
+            BrandName
+          </a>
+          <button
+            className="p-2 rounded-md hover:bg-gray-100 transition-colors"
+            onClick={() => setOpen(false)}
+          >
+            <X size={28} />
+          </button>
         </div>
-      )}
+
+        <nav className="flex flex-col gap-6 mt-8 px-6 text-gray-700 font-medium">
+          {["Home", "About Us", "Privacy Policy", "Terms", "Contact", "Become Partner"].map((item, idx) => (
+            <a
+              key={idx}
+              href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              className="hover:text-blue-600 transition-colors text-lg"
+              onClick={() => setOpen(false)}
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };
