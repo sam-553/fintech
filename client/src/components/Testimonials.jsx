@@ -155,11 +155,11 @@ const Testimonials = () => {
 
 
       {/* capital */}
-        <div className="bg-gray-600 text-white rounded-4xl p-8 mt-10 mx-10">
-  <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 ">
+   <div className="bg-gray-600 text-white rounded-4xl p-8 mt-10 mx-4 md:mx-10">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
-   
-    <div className="text-center md:text-left space-y-3 ml-18">
+    {/* Text Content */}
+    <div className="text-center md:text-left space-y-3 md:ml-6">
       <h1 className="text-xl md:text-2xl font-bold">
         Register as a Ducat Capital Fintech Partner
       </h1>
@@ -174,14 +174,15 @@ const Testimonials = () => {
       </button>
     </div>
 
-  
+    {/* Image */}
     <img
       src="/assets/download.jpeg"
       alt="Partner"
-      className="w-full md:w-64 rounded-lg hidden md:block mr-18 "
+      className="w-full max-w-xs md:w-64 rounded-lg mx-auto md:mx-0 hidden md:block"
     />
   </div>
 </div>
+
     </section>
   );
 };
