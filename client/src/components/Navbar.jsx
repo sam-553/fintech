@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link to="/about" onClick={() => setOpen(false)}>About Us</Link>
             <Link to="/privacy-policy" onClick={() => setOpen(false)}>Privacy Policy</Link>
             <Link to="/terms" onClick={() => setOpen(false)}>Terms</Link>
-            <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+            
             <Link to="/becomepartner" onClick={() => setOpen(false)}>Become Partner</Link>
           </nav>
         </div>
