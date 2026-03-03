@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Banknote, DollarSign, HandCoins, Headphones, Headset, HomeIcon, Landmark } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -60,6 +61,10 @@ const review=[
 ]
 
 const Testimonials = () => {
+  const number="919479052073";
+  const message="Hello, I want more details about your services."
+  const encodedMessage=encodeURIComponent(message);
+  const whatsappLink=`https://wa.me/${number}?text=${encodedMessage}`;
 
    const scrollRef = useRef(null);
   
@@ -155,32 +160,37 @@ const Testimonials = () => {
 
 
       {/* capital */}
-   <div className="bg-gray-600 text-white rounded-4xl p-8 mt-10 mx-4 md:mx-10">
-  <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+   <div className="relative bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-3xl p-8 mt-10 mx-4 md:mx-10 overflow-hidden shadow-xl ">
+
+  <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
     {/* Text Content */}
-    <div className="text-center md:text-left space-y-3 md:ml-6">
-      <h1 className="text-xl md:text-2xl font-bold">
-        Register as a Ducat Capital Fintech Partner
+    <div className="text-center md:text-left space-y-4 md:ml-6">
+      <h1 className="text-2xl md:text-3xl font-bold leading-snug">
+        Register as a <span className="text-green-400">Ducat Capital Fintech</span> Partner
       </h1>
 
-      <p className="text-gray-200">
-        Grow your business. Grow your career
+      <p className="text-gray-300 text-sm md:text-base">
+        Grow your business. Grow your career.  
+        Start earning with India’s fast-growing fintech network.
       </p>
 
-      <button className="bg-green-500 px-6 py-2 rounded-lg hover:bg-green-600 transition">
-        <span className="hidden md:inline">Contact Us</span>
-        <span className="md:hidden">Download App</span>
+      <button className="bg-green-500 px-6 py-2 rounded-lg font-medium shadow-md hover:bg-green-600 hover:shadow-green-400/40 hover:scale-105 transition duration-300">
+        <Link to={whatsappLink} className="hidden md:inline">Contact Us</Link>
+        <a href="#" className="md:hidden">Download App</a>
       </button>
     </div>
 
     {/* Image */}
     <img
-      src="/assets/download.jpeg"
+      src="/assets/handshake.png"
       alt="Partner"
-      className="w-full max-w-xs md:w-64 rounded-lg mx-auto md:mx-0 hidden md:block"
+      className="w-52 md:w-64 mx-auto md:mx-0  hidden md:block"
     />
   </div>
+
+  {/* Decorative Glow Effect */}
+  <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-500 opacity-20 rounded-full blur-3xl"></div>
 </div>
 
     </section>

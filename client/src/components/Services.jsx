@@ -98,7 +98,7 @@ const ProductsSection = () => {
       </div>
 
       {/* STATS SECTION */}
-      <div className="bg-gray-700 text-white mt-16 py-12 rounded-2xl relative">
+      <div className="bg-gray-700 text-white mt-16 py-12 rounded-2xl relative ml-2 mr-2">
         <h1 className="text-3xl font-bold text-center mb-2">
           Millions of Wishes, Enabled!
         </h1>
@@ -121,11 +121,11 @@ const ProductsSection = () => {
         {/* AUTO SCROLL BANK LOGOS */}
         <div className="bg-white absolute left-1/2 
         -translate-x-1/2 -bottom-10 rounded-xl shadow-lg
-        px-6 py-4 w-[90%] max-w-4xl overflow-hidden">
+        px-6 py-4 w-[90%] max-w-4xl overflow-hidden ">
 
           <div
             ref={scrollRef}
-            className="flex gap-10 overflow-x-auto whitespace-nowrap no-scrollbar"
+            className="flex gap-10 overflow-x-auto whitespace-nowrap no-scrollbar "
           >
             {[...bankImage, ...bankImage].map((img, i) => (
               <img

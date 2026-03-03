@@ -1,59 +1,74 @@
 import React from "react";
+import {
+  Users,
+  Landmark,
+  Handshake,
+  TrendingUp,
+  ShieldCheck,
+  Globe,
+} from "lucide-react";
 
 const About = () => {
   return (
     <section className="relative py-20 bg-gradient-to-r from-gray-50 via-white to-gray-100 overflow-hidden mt-8">
 
-      {/* Decorative Blur */}
-      <div className="absolute -top-16 -left-16 w-72 h-72 bg-gray-200 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute -bottom-16 -right-16 w-72 h-72 bg-gray-300 rounded-full blur-3xl opacity-40"></div>
+      {/* Decorative Blur Background */}
+      <div className="absolute -top-16 -left-16 w-72 h-72 bg-green-200 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute -bottom-16 -right-16 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
 
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            About Ducat Capital Fintech
+            About <span className="text-green-600">Ducat Capital Fintech</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Empowering rural and semi-urban communities with accessible
-            financial services and inclusive growth.
+            financial services and inclusive growth across India.
           </p>
         </div>
 
         {/* About Content */}
-        <div className="bg-white shadow-lg rounded-2xl p-10 mb-16 hover:shadow-2xl transition duration-300">
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Ducat Capital Fintech focuses on empowering rural and semi-urban
-            communities through Credit Cards, Personal Loans, Business Loans,
-            Home Loans, Micro Loans, Demat Accounts, Saving Accounts and
-            financial inclusion programs.
-          </p>
+        <div className="bg-white shadow-xl rounded-3xl p-10 mb-16 hover:shadow-2xl transition duration-500">
+          <div className="flex items-start gap-4 mb-6">
+            <Landmark className="text-green-600 w-8 h-8" />
+            <p className="text-gray-700 leading-relaxed">
+              Ducat Capital Fintech provides Credit Cards, Personal Loans,
+              Business Loans, Home Loans, Micro Loans, Demat Accounts,
+              Saving Accounts and financial inclusion programs.
+            </p>
+          </div>
 
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            We support women, farmers, and small entrepreneurs by providing
-            accessible financial services, livelihood support, and
-            capacity-building initiatives.
-          </p>
+          <div className="flex items-start gap-4 mb-6">
+            <Users className="text-blue-600 w-8 h-8" />
+            <p className="text-gray-700 leading-relaxed">
+              We actively support women entrepreneurs, farmers, and small
+              business owners by offering accessible financial solutions
+              and livelihood development initiatives.
+            </p>
+          </div>
 
-          <p className="text-gray-700 leading-relaxed">
-            Our belief: <strong>
-              “Strong villages build a strong nation.”
-            </strong>
-          </p>
+          <div className="flex items-start gap-4">
+            <Handshake className="text-purple-600 w-8 h-8" />
+            <p className="text-gray-700 leading-relaxed font-medium">
+              Our belief: “Strong villages build a strong nation.”
+            </p>
+          </div>
         </div>
 
         {/* Stats Section */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16 text-center">
+        <div className="grid md:grid-cols-3 gap-8 mb-20 text-center">
           {[
-            ["10K+", "Customers Served"],
-            ["500+", "Villages Connected"],
-            ["24/7", "Support Available"],
+            ["10K+", "Customers Served", <Users className="mx-auto text-green-600 w-8 h-8 mb-3" />],
+            ["500+", "Villages Connected", <Globe className="mx-auto text-blue-600 w-8 h-8 mb-3" />],
+            ["24/7", "Support Available", <ShieldCheck className="mx-auto text-purple-600 w-8 h-8 mb-3" />],
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+              className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-500 cursor-pointer"
             >
+              {item[2]}
               <h3 className="text-3xl font-bold text-gray-900 mb-2">
                 {item[0]}
               </h3>
@@ -62,34 +77,95 @@ const About = () => {
           ))}
         </div>
 
-        {/* Mission Vision */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-              Mission
-            </h3>
+        {/* Mission & Vision */}
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
+          <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-500">
+            <div className="flex items-center gap-3 mb-4">
+              <TrendingUp className="text-green-600 w-7 h-7" />
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Mission
+              </h3>
+            </div>
             <p className="text-gray-700">
               To uplift rural and semi-urban communities by providing easy,
-              transparent financial services and livelihood opportunities.
+              transparent, and affordable financial services along with
+              livelihood opportunities.
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-              Vision
-            </h3>
+          <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-500">
+            <div className="flex items-center gap-3 mb-4">
+              <Globe className="text-blue-600 w-7 h-7" />
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Vision
+              </h3>
+            </div>
             <p className="text-gray-700">
-              To become a trusted financial partner enabling financial
-              freedom, dignity, and economic growth across India.
+              To become India’s most trusted fintech partner enabling
+              financial freedom, dignity, and sustainable economic growth.
             </p>
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <button className="px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-black hover:scale-105 transition">
-            Join With Us
-          </button>
+        {/* Why Choose Us */}
+        <div>
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Why Choose <span className="text-green-600">Us?</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We combine innovation, transparency, and community support
+              to deliver reliable financial services across India.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <ShieldCheck className="w-10 h-10 text-green-600 mb-4" />,
+                title: "Trusted & Transparent",
+                desc: "No hidden charges and clear documentation process."
+              },
+              {
+                icon: <TrendingUp className="w-10 h-10 text-blue-600 mb-4" />,
+                title: "Fast Approvals",
+                desc: "Quick loan processing and hassle-free experience."
+              },
+              {
+                icon: <Users className="w-10 h-10 text-purple-600 mb-4" />,
+                title: "Community Focused",
+                desc: "Empowering rural entrepreneurs and MSMEs."
+              },
+              {
+                icon: <Globe className="w-10 h-10 text-indigo-600 mb-4" />,
+                title: "Pan India Reach",
+                desc: "Expanding services across villages and towns."
+              },
+              {
+                icon: <Landmark className="w-10 h-10 text-emerald-600 mb-4" />,
+                title: "Wide Product Range",
+                desc: "Loans, Credit Cards, Demat & more in one platform."
+              },
+              {
+                icon: <Handshake className="w-10 h-10 text-rose-600 mb-4" />,
+                title: "Strong Partnerships",
+                desc: "Collaborating with trusted financial institutions."
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-500 cursor-pointer"
+              >
+                {item.icon}
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

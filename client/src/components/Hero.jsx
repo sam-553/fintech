@@ -1,21 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const number="919479052073";
+  const message="Hello, I want more details about your services."
+  const encodedMessage=encodeURIComponent(message);
+  const whatsappLink=`https://wa.me/${number}?text=${encodedMessage}`;
   return (
     <section className="relative bg-gradient-to-r from-gray-50 via-white to-gray-100 py-20 overflow-hidden mt-6">
       
-      {/* Decorative blur background */}
+      
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-40"></div>
 
     <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-  {/* IMAGE → TOP ON MOBILE */}
+  
   <div className="flex justify-center order-1 md:order-2">
     <img
       src="/assets/homeherologo.webp"
       alt="Finance App"
-      className="w-full max-w-md rounded-2xl shadow-xl"
+      className="w-full max-w-md "
     />
   </div>
 
@@ -37,9 +42,12 @@ const Hero = () => {
 
     {/* CTA Buttons */}
     <div className="flex gap-4 pt-4 flex-wrap">
-      <button className="px-8 py-3 bg-green-700 text-white rounded-full shadow-lg hover:bg-green-800 hover:scale-105 hover:shadow-xl transition duration-300 mx-auto">
-       <span className="hidden md:block">contactus</span>
-       <span className="md:hidden ">Download Now</span>
+      <button className="px-8 py-3 bg-green-700 text-white rounded-full shadow-lg hover:bg-green-800 hover:scale-105 hover:shadow-xl transition duration-300 mx-auto md:ml-0 ">
+       <Link to={whatsappLink} 
+       target="_blank"
+          rel="noopener noreferrer"
+       className="hidden md:block ">Contact Us</Link>
+       <a href="#" className="md:hidden mx-auto  ">Download Now</a>
       </button>
 
       

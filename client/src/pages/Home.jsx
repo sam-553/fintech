@@ -14,7 +14,6 @@ const Home = () => {
         <div>
           
             <Hero />
-           
             <Services />
             <EmiCalculator/>
             <Testimonials />
