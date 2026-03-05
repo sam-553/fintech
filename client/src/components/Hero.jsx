@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const number="919479052073";
+  const number="916261996166";
   const message="Hello, I want more details about your services."
   const encodedMessage=encodeURIComponent(message);
   const whatsappLink=`https://wa.me/${number}?text=${encodedMessage}`;
