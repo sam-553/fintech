@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <section className="relative bg-gradient-to-r from-gray-50 via-white to-gray-100 py-16 overflow-hidden mt-10 font-sans">
 
-      {/* Background blur shapes */}
+    
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-40"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-        {/* IMAGE */}
+       
         <div className="flex justify-center order-1 md:order-2">
           <img
             src="/assets/homeherologo.webp"
@@ -25,7 +25,7 @@ const Hero = () => {
           />
         </div>
 
-        {/* CONTENT */}
+       
         <div className="space-y-5 order-2 md:order-1">
 
           <h1 className="text-3xl md:text-4xl font-extrabold leading-snug">
@@ -42,7 +42,7 @@ const Hero = () => {
             Learn & Earn from anywhere by referring customers and educating
             them about financial products offered on our platform.
           </p>
-          
+
         {/* CTA BUTTON */}
          <div className="flex gap-4 pt-4 flex-wrap">
             <button className="px-8 py-3 bg-green-700 text-white rounded-full shadow-lg hover:bg-green-800 hover:scale-105 hover:shadow-xl transition duration-300 mx-auto md:ml-0 font-medium">

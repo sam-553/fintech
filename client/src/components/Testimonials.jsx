@@ -90,8 +90,8 @@ const Testimonials = () => {
     <section className="py-16 bg-gray-50 text-gray-800">
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Heading */}
-        <h1 className="text-4xl font-bold">
-          Why is Ducat Capital Fintech the #1 trusted financial
+        <h1 className="text-3xl font-bold text-center mb-12 font-[Poppins] tracking-tight">
+          Why is Ducat Capital Fintech the #1 trusted financial brand across
           <span> <br />brand across India</span>
         </h1>
 
@@ -123,7 +123,7 @@ const Testimonials = () => {
        {/* review section */}
       {/* review section */}
 <div className="mt-16 text-center">
-  <h1 className="text-4xl font-bold">
+  <h1 className="text-3xl font-bold text-center mb-12 font-[Poppins] tracking-tight">
     Ducat Capital Fintech's Success Stories
   </h1>
 

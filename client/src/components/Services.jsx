@@ -72,10 +72,9 @@ const ProductsSection = () => {
     <section className="py-16 bg-gray-50">
       
       {/* PRODUCTS */}
-      <h1 className="text-3xl font-bold text-center mb-12">
-        Bringing You the Best Products from Top Banks
-      </h1>
-
+      <h1 className="text-3xl font-bold text-center mb-12 font-[Poppins] tracking-tight">
+  Bringing You the Best Products from Top Banks
+</h1>
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-6">
         {products.map((item, i) => (
           <div

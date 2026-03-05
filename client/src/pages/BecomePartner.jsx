@@ -87,7 +87,7 @@ const BecomePartner = () => {
       id: 2,
       name: "Sanjay Yadav",
       position: "Ducat Capital Fintech Certified Partner",
-      message: "I feel proud to be a Ducat Capital Fintech Partner. This job has earned me respect in society. Also I am very happy to help people when they are in financial difficulties. The appreciation that I get from my customers motivates me to always do my best.",
+      message: "I feel proud to be a Ducat Capital Fintech Partner. This job has earned me respect in society. Also I am very happy to help people when they are in financial difficulties. The appreciation that I get from my customers motivates me to always do my best. The commissions are also very good .",
       
     },
     {
@@ -456,39 +456,40 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
   </div>
 
   {/* Testimonials Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-    
-    {testimonials.map((t) => (
-      <div
-        key={t.id}
-        className="bg-white p-5 sm:p-6 rounded-xl shadow-md 
-        hover:shadow-2xl transition duration-300 hover:-translate-y-1"
-      >
+ {/* Testimonials Grid */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-        {/* Message */}
-        <div className="text-gray-700 relative">
-          <span className="text-blue-700 text-3xl absolute -left-2 -top-3">“</span>
-          <p className="mt-4 text-sm sm:text-base leading-relaxed">
-            {t.message}
+  {testimonials.map((t) => (
+    <div
+      key={t.id}
+      className="bg-white p-5 sm:p-6 rounded-xl shadow-md 
+      hover:shadow-2xl transition duration-300 hover:-translate-y-1 flex flex-col"
+    >
+
+      {/* Message */}
+      <div className="text-gray-700 relative min-h-[120px]">
+        <span className="text-blue-700 text-3xl absolute -left-2 -top-3">“</span>
+        <p className="mt-4 text-sm sm:text-base leading-relaxed">
+          {t.message}
+        </p>
+      </div>
+
+      {/* User */}
+      <div className="flex items-center mt-6">
+        <div className="ml-2 text-left">
+          <h4 className="font-semibold text-base sm:text-lg">
+            {t.name}
+          </h4>
+          <p className="text-sm text-gray-500">
+            {t.position}
           </p>
         </div>
-
-        {/* User */}
-        <div className="flex items-center mt-6">
-          <div className="ml-2 text-left">
-            <h4 className="font-semibold text-base sm:text-lg">
-              {t.name}
-            </h4>
-            <p className="text-sm text-gray-500">
-              {t.position}
-            </p>
-          </div>
-        </div>
-
       </div>
-    ))}
 
-  </div>
+    </div>
+  ))}
+
+</div>
 
 </div>
       {/* capital */}
