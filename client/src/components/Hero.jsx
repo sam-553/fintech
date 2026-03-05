@@ -42,6 +42,7 @@ const Hero = () => {
             Learn & Earn from anywhere by referring customers and educating
             them about financial products offered on our platform.
           </p>
+          
         {/* CTA BUTTON */}
          <div className="flex gap-4 pt-4 flex-wrap">
             <button className="px-8 py-3 bg-green-700 text-white rounded-full shadow-lg hover:bg-green-800 hover:scale-105 hover:shadow-xl transition duration-300 mx-auto md:ml-0 font-medium">
