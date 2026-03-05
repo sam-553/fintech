@@ -13,7 +13,7 @@ const BecomePartner = () => {
   const featureCard = [
     {
       desc: "A personalized app built just for you",
-      img: "/assets/app.png",
+      img: "/assets/p1.png",
     },
     {
       desc: "Quickly create, organize, and track your customer leads",
@@ -81,21 +81,21 @@ const BecomePartner = () => {
       name: "Aakash Saxena",
       position: "Ducat Capital Fintech Certified Partner",
       message: "I joined Ducat Capital Fintech 5 months ago. The app is very user friendly and the personalized website and marketing features helped me get more customers. The partner support team is very supportive and cooperative as well. All my queries have been resolved by them quickly.",
-      avatar: "https://i.pravatar.cc/100?img=1",
+     
     },
     {
       id: 2,
       name: "Sanjay Yadav",
       position: "Ducat Capital Fintech Certified Partner",
       message: "I feel proud to be a Ducat Capital Fintech Partner. This job has earned me respect in society. Also I am very happy to help people when they are in financial difficulties. The appreciation that I get from my customers motivates me to always do my best.",
-      avatar: "https://i.pravatar.cc/100?img=2",
+      
     },
     {
       id: 3,
       name: "Adesh Chaudhary",
       position: "Ducat Capital Fintech Certified Partner",
       message: "I am glad that I chose to associate myself with Ducat Capital Fintech . They have some unique financial products and selling those to people in need makes me very happy because through Ducat Capital Fintech I could make an impact in people's lives. They have the best commissions in the market.",
-      avatar: "https://i.pravatar.cc/100?img=3",
+     
     },
   ];
 
@@ -222,40 +222,42 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
     rounded-full transition-all duration-500 hover:w-28"></div>
   </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    {featureCard.map((card, i) => (
-      <div
-        key={i}
-        className="group relative bg-white rounded-2xl shadow-md
-        hover:shadow-2xl hover:-translate-y-2
-        transition duration-300 text-center overflow-hidden"
-      >
+  {featureCard.map((card, i) => (
+    <div
+      key={i}
+      className="group relative bg-white rounded-2xl shadow-md 
+      hover:shadow-2xl hover:-translate-y-2 
+      transition duration-300 text-center overflow-hidden"
+    >
 
-        {/* Image Section */}
-        <div className="w-full h-48 sm:h-56 md:h-60 overflow-hidden">
-          <img
-            src={card.img}
-            alt={card.desc}
-            className=" object-contain"
-          />
-        </div>
-
-        {/* Content Section */}
-        <div className="p-6">
-          <p className="text-gray-700 font-semibold text-sm sm:text-base">
-            {card.desc}
-          </p>
-
-          <div className="h-1 w-0 bg-blue-600 
-          group-hover:w-16 transition-all duration-500 
-          mx-auto mt-4 rounded"></div>
-        </div>
-
+      {/* Image Section */}
+      <div className="w-full h-40 sm:h-48 md:h-52 lg:h-56 ">
+        <img
+          src={card.img}
+          alt={card.desc}
+          className=" object-contain"
+        />
       </div>
-    ))}
 
-  </div>
+      {/* Content Section */}
+      <div className="px-4 pb-6">
+        <p className="text-gray-700 font-semibold text-sm sm:text-base">
+          {card.desc}
+        </p>
+
+        <div
+          className="h-1 w-0 bg-blue-600 
+          group-hover:w-16 transition-all duration-500 
+          mx-auto mt-4 rounded"
+        ></div>
+      </div>
+
+    </div>
+  ))}
+
+</div>
 </div>
 
      {/* platform */}
@@ -441,45 +443,54 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
       </div>
       {/*rating */}
 
-      <div className="m-4">
-        <div className="text-center m-12">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-800 
-   transition duration-300">
-            What our Ducat Capital Fintech Partners say
-          </h1>
+     <div className="px-4 py-10 sm:px-6 lg:px-10">
 
-          <div className="h-1 w-16 bg-green-600 mx-auto mt-4 
-  rounded-full transition-all duration-500 hover:w-32"></div>
+  {/* Heading */}
+  <div className="text-center mb-12">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+      What our Ducat Capital Fintech Partners say
+    </h1>
+
+    <div className="h-1 w-16 bg-green-600 mx-auto mt-4 
+    rounded-full transition-all duration-500 hover:w-32"></div>
+  </div>
+
+  {/* Testimonials Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+    
+    {testimonials.map((t) => (
+      <div
+        key={t.id}
+        className="bg-white p-5 sm:p-6 rounded-xl shadow-md 
+        hover:shadow-2xl transition duration-300 hover:-translate-y-1"
+      >
+
+        {/* Message */}
+        <div className="text-gray-700 relative">
+          <span className="text-blue-700 text-3xl absolute -left-2 -top-3">“</span>
+          <p className="mt-4 text-sm sm:text-base leading-relaxed">
+            {t.message}
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((t) => (
-            <div
-              key={t.id}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
-            >
-              <div className="text-left text-gray-700 relative">
-                <span className="text-blue-700 text-2xl absolute -left-2 -top-2">“</span>
-                <p className="mt-2">{t.message}</p>
-              </div>
-              <div className="flex items-center mt-6">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  className="w-14 h-14 rounded-full border-2 border-blue-700"
-                />
-                <div className="ml-4 text-left">
-                  <h4 className="font-semibold text-lg">{t.name}</h4>
-                  <p className="text-sm text-gray-500">{t.position}</p>
-                </div>
-              </div>
-
-
-            </div>
-          ))}
+        {/* User */}
+        <div className="flex items-center mt-6">
+          <div className="ml-2 text-left">
+            <h4 className="font-semibold text-base sm:text-lg">
+              {t.name}
+            </h4>
+            <p className="text-sm text-gray-500">
+              {t.position}
+            </p>
+          </div>
         </div>
+
       </div>
+    ))}
 
+  </div>
+
+</div>
       {/* capital */}
       <div className="relative bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-3xl p-8 mt-10 mx-4 md:mx-10 overflow-hidden shadow-xl ">
 
