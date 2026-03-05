@@ -21,7 +21,7 @@ const Hero = () => {
           <img
             src="/assets/homeherologo.webp"
             alt="Finance App"
-            className="w-full max-w-sm hover:scale-105 transition duration-500"
+            className="w-full max-w-sm"
           />
         </div>
 

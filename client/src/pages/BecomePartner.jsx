@@ -265,7 +265,7 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
         <h1 className="text-2xl md:text-4xl font-bold text-gray-800 
    transition duration-300">
           Why is Ducat Capital Fintech the #1 trusted platform
-          for financial consultants
+         <span><br /> for financial consultants</span>
         </h1>
 
         <div className="h-1 w-16 bg-green-600 mx-auto mt-4 
