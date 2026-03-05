@@ -13,19 +13,19 @@ const BecomePartner = () => {
   const featureCard = [
     {
       desc: "A personalized app built just for you",
-      img: "/assets/p1.png",
+      img: "/assets/p1.jpeg",
     },
     {
       desc: "Quickly create, organize, and track your customer leads",
-      img: "/assets/p2.png",
+      img: "/assets/p2.jpeg",
     },
     {
       desc: "Promote your business using your referral code",
-      img: "/assets/p3.png",
+      img: "/assets/p3.jpeg",
     },
     {
       desc: "One app to manage all your transactions effortlessly",
-      img: "/assets/p4.png",
+      img: "/assets/p4.jpeg",
     },
   ];
 
@@ -227,17 +227,17 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
   {featureCard.map((card, i) => (
     <div
       key={i}
-      className="group relative bg-white rounded-2xl shadow-md 
+      className="group bg-white rounded-2xl shadow-md 
       hover:shadow-2xl hover:-translate-y-2 
       transition duration-300 text-center overflow-hidden"
     >
 
       {/* Image Section */}
-      <div className="w-full h-40 sm:h-48 md:h-52 lg:h-56 ">
+      <div className="w-full h-80 flex items-center justify-center">
         <img
           src={card.img}
           alt={card.desc}
-          className=" object-contain"
+          className="w-full h-full object-contain p-4"
         />
       </div>
 
