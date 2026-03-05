@@ -174,38 +174,48 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           />
         </div>
 
-        {/* CONTENT */}
-        <div className="space-y-5 order-2 md:order-1 text-center md:text-left">
+       {/* CONTENT */}
+<div className="space-y-5 order-2 md:order-1 text-center md:text-left">
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-    font-bold leading-snug">
-            <span className="bg-gradient-to-r from-blue-700 to-indigo-600 
-      bg-clip-text text-transparent">
-              Aapki Apni Finance  <br /> <span className="text-green-600"> Ki Dukaan</span>
-            </span>
-          </h1>
+  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+  font-extrabold leading-tight tracking-tight">
+    
+    <span className="bg-gradient-to-r from-blue-700 to-indigo-600 
+    bg-clip-text text-transparent">
+      Aapki Apni Finance
+    </span>
 
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Your reliable partner for personal, home, business, and car loans.
-            We simplify the loan process with expert guidance, bank partnerships,
-            and fast approvals.
-          </p>
+    <br />
 
-          {/* Button */}
-          <div className="pt-4 flex justify-center md:justify-start">
-            <Link to={whatsappLink} 
-           target="_blank"
-          rel="noopener noreferrer"
-            className="w-full sm:w-auto px-6 sm:px-8 py-3 
-      bg-blue-700 text-white rounded-xl shadow-lg 
-      hover:bg-blue-800 hover:scale-105 hover:shadow-xl 
-      transition duration-300">
-              Become Partner
-            </Link>
-          </div>
+    <span className="text-green-600 font-bold">
+      Ki Dukaan
+    </span>
 
-        </div>
+  </h1>
 
+  <p className="text-sm sm:text-base md:text-lg text-gray-600 
+  leading-relaxed max-w-lg mx-auto md:mx-0">
+    Your reliable partner for personal, home, business, and car loans.
+    We simplify the loan process with expert guidance, bank partnerships,
+    and fast approvals.
+  </p>
+
+  {/* Button */}
+  <div className="pt-4 flex justify-center md:justify-start">
+    <Link
+      to={whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full sm:w-auto px-6 sm:px-8 py-3 
+      bg-green-600 text-white font-medium rounded-full shadow-lg
+      hover:bg-green-700 hover:scale-105 hover:shadow-xl
+      transition duration-300"
+    >
+      Become Partner
+    </Link>
+  </div>
+
+</div>
       </div>
 
      {/* feature card */}
