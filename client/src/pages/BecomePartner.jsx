@@ -181,7 +181,7 @@ grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
     font-bold leading-snug">
             <span className="bg-gradient-to-r from-blue-700 to-indigo-600 
       bg-clip-text text-transparent">
-              Aapki Apni Finance Ki Dukaan
+              Aapki Apni Finance  <br /> <span className="text-green-600"> Ki Dukaan</span>
             </span>
           </h1>
 

@@ -2,12 +2,12 @@ import React from "react";
 
 const TermsConditions = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-50 via-white to-gray-100 py-20 mt-8">
+    <section className="bg-gradient-to-r from-gray-50 via-white to-gray-100 py-10 mt-8">
       <div className="max-w-5xl mx-auto px-6 mt-10">
 
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-          Terms & Conditions
+          Terms<span className="text-green-600"> & Conditions</span>
         </h1>
         <p className="text-center text-gray-600 mb-12">
           Please read these terms carefully before using our financial services.

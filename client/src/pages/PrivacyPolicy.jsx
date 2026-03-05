@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
             Privacy <span className="text-green-600">Policy</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">

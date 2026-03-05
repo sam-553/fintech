@@ -20,7 +20,7 @@ const About = () => {
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
             About <span className="text-green-600">Ducat Capital Fintech</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
